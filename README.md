@@ -119,7 +119,6 @@ entre a previsão do notebook e a da aplicação.
 | Tomé Rossi Giani | 562422 |
 | Vitor Ramos de Farias | 561958 |
 
-> ⚠️ Confirme nomes/RMs do grupo **desta** disciplina antes de enviar.
 
 ## Referências
 
