@@ -246,4 +246,6 @@ if st.button("🔮 Prever faixa de renda", type="primary", use_container_width=T
     st.caption(f"Limiar de decisão: {threshold:.2f} · Classe positiva: >50K")
 
     with st.expander("Ver dados enviados ao modelo"):
-        st.dataframe(X_novo.T.rename(columns={0: "valor"}))
+        # converte para texto: a coluna mistura numeros e categorias, e o Arrow
+        # (usado pelo st.dataframe) falha ao inferir um tipo unico para a coluna.
+        st.dataframe(X_novo.T.rename(columns={0: "valor"}).astype(str))
