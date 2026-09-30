@@ -107,8 +107,8 @@ entre a previsão do notebook e a da aplicação.
 
 ## 7. Links de entrega
 
-- **GitHub:** _inserir URL do repositório_
-- **Streamlit:** _inserir URL da aplicação_
+- **GitHub:** https://github.com/leo-kina/CKP05
+- **Streamlit:** _inserir URL da aplicação (após publicar no Streamlit Cloud)_
 
 ## 8. Integrantes
 
