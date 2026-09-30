@@ -1,0 +1,176 @@
+{
+  "numeric": {
+    "age": {
+      "min": 17.0,
+      "max": 90.0,
+      "median": 37.0
+    },
+    "capital-gain": {
+      "min": 0.0,
+      "max": 99999.0,
+      "median": 0.0
+    },
+    "capital-loss": {
+      "min": 0.0,
+      "max": 4356.0,
+      "median": 0.0
+    },
+    "hours-per-week": {
+      "min": 1.0,
+      "max": 99.0,
+      "median": 40.0
+    }
+  },
+  "categorical": {
+    "workclass": [
+      "Federal-gov",
+      "Local-gov",
+      "Never-worked",
+      "Private",
+      "Self-emp-inc",
+      "Self-emp-not-inc",
+      "State-gov",
+      "Without-pay"
+    ],
+    "education": [
+      "10th",
+      "11th",
+      "12th",
+      "1st-4th",
+      "5th-6th",
+      "7th-8th",
+      "9th",
+      "Assoc-acdm",
+      "Assoc-voc",
+      "Bachelors",
+      "Doctorate",
+      "HS-grad",
+      "Masters",
+      "Preschool",
+      "Prof-school",
+      "Some-college"
+    ],
+    "marital-status": [
+      "Divorced",
+      "Married-AF-spouse",
+      "Married-civ-spouse",
+      "Married-spouse-absent",
+      "Never-married",
+      "Separated",
+      "Widowed"
+    ],
+    "occupation": [
+      "Adm-clerical",
+      "Armed-Forces",
+      "Craft-repair",
+      "Exec-managerial",
+      "Farming-fishing",
+      "Handlers-cleaners",
+      "Machine-op-inspct",
+      "Other-service",
+      "Priv-house-serv",
+      "Prof-specialty",
+      "Protective-serv",
+      "Sales",
+      "Tech-support",
+      "Transport-moving"
+    ],
+    "relationship": [
+      "Husband",
+      "Not-in-family",
+      "Other-relative",
+      "Own-child",
+      "Unmarried",
+      "Wife"
+    ],
+    "race": [
+      "Amer-Indian-Eskimo",
+      "Asian-Pac-Islander",
+      "Black",
+      "Other",
+      "White"
+    ],
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "native-country": [
+      "Cambodia",
+      "Canada",
+      "China",
+      "Columbia",
+      "Cuba",
+      "Dominican-Republic",
+      "Ecuador",
+      "El-Salvador",
+      "England",
+      "France",
+      "Germany",
+      "Greece",
+      "Guatemala",
+      "Haiti",
+      "Holand-Netherlands",
+      "Honduras",
+      "Hong",
+      "Hungary",
+      "India",
+      "Iran",
+      "Ireland",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Laos",
+      "Mexico",
+      "Nicaragua",
+      "Outlying-US(Guam-USVI-etc)",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Puerto-Rico",
+      "Scotland",
+      "South",
+      "Taiwan",
+      "Thailand",
+      "Trinadad&Tobago",
+      "United-States",
+      "Vietnam",
+      "Yugoslavia"
+    ]
+  },
+  "num_cols": [
+    "age",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "cat_cols": [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"
+  ],
+  "target": "class (>50K = 1)",
+  "modelo_final": "XGBoost (optuna)",
+  "best_params": {
+    "n_estimators": 700,
+    "max_depth": 7,
+    "learning_rate": 0.019721823758519906,
+    "subsample": 0.7197402100044593,
+    "colsample_bytree": 0.612047310441673,
+    "reg_lambda": 0.012680617599238263
+  },
+  "metricas_teste": {
+    "ROC-AUC (principal)": 0.9270158218532095,
+    "PR-AUC (avg precision)": 0.8221963967962631,
+    "Acuracia": 0.8727198196351711,
+    "Precisao (>50K)": 0.7828335056876939,
+    "Recall (>50K)": 0.6481164383561644,
+    "F1 (>50K)": 0.7091334894613583
+  },
+  "threshold": 0.5
+}

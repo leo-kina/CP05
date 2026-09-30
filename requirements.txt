@@ -1,0 +1,15 @@
+# CheckPoint05 — dependências (versões testadas neste projeto)
+# Estas versões garantem que o artefato model/final_pipeline.joblib
+# seja recarregado com a mesma versão do scikit-learn usada no treino.
+scikit-learn==1.9.1
+xgboost==3.2.0
+lightgbm==4.7.0
+optuna==5.0.0
+pandas==3.0.6
+numpy==2.4.6
+joblib==1.6.0
+matplotlib==3.11.2
+seaborn==0.13.2
+streamlit==1.64.0
+# necessário apenas para baixar a base caso data/adult.csv não exista
+# (scikit-learn já provê fetch_openml; nenhuma dependência extra é preciso)
